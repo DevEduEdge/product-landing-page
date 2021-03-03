@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Pirata+One&family=Staatliches&family=Yellowtail&display=swap");
+
+/* Font-Family To choose from */
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Pirata One', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Yellowtail', cursive; */
+
+// reset default Styling
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+nav {
+  background-color: rgb(202, 250, 246);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+// logo styles
+.logo-img {
+  padding-top: 15px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+//nav-bar styling
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-links {
+  height: 30px;
+  width: 80px;
+  padding: 10px;
+  list-style: none;
+
+  :hover {
+    border: 2px red solid;
+  }
+}
+
+// #home,
+// #project,
+// #blog,
+// #contact-us {
+// }
+
+// hero section styling
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("dummy-hero1.png");
+  height: 94vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-info {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 185px;
+  left: 20%;
+
+  .hero-heading {
+    color: #fff;
+    font-size: 6rem;
+    width: 100%;
+  }
+  .hero-para {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 150px;
+    left: 30%;
+  }
+}
+// Main section Styles
+main {
+  max-width: 85vw;
+  margin: auto;
+  border: 1px solid red;
+}
+// Products items styling
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .product-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .product-item img {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+// Footer Styling
+footer {
+  margin-top: 2rem;
+}
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-bottom {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
