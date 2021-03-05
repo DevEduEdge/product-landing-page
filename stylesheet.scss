@@ -15,7 +15,8 @@ font-family: 'Yellowtail', cursive; */
 body {
 }
 nav {
-  background-color: rgb(202, 250, 246);
+  background-color: #1757b8;
+  color: black;
   height: 50px;
   display: flex;
   align-items: center;
@@ -55,8 +56,11 @@ nav {
 
 // hero section styling
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("dummy-hero1.png");
+  background-image: linear-gradient(
+    to right,
+    rgba(219, 219, 219, 0.5),
+    rgba(126, 126, 126, 0.5)
+  );
   height: 94vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +91,8 @@ nav {
 }
 // Main section Styles
 main {
-  max-width: 85vw;
+  padding: 1rem;
+  max-width: 80vw;
   margin: auto;
   border: 1px solid red;
 }
@@ -122,11 +127,83 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 1px solid red;
 }
 .footer-bottom {
-  height: 150px;
+  background-color: rgb(104, 104, 230);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  //   Navigation links for footer
+  .footer-nav-links {
+    list-style: none;
+    padding: 1rem;
+
+    li {
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 100%;
+      height: 1.5rem;
+      padding: 0.2rem;
+      margin: 0.5rem;
+      border: 1px solid red;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      text-align: center;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.2);
+        box-shadow: rgb(138, 138, 138) 0px 5px 10px;
+      }
+    }
+  }
+  //   Author-info about himself
+  .author-info {
+    height: 100%;
+    // padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  }
+
+  //   Social Media content
+  .social-media {
+    list-style: none;
+    // margin: 1.5rem;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+
+    .facebook,
+    .instagram,
+    .twitter,
+    .github {
+      padding: 5px;
+      margin: 5px;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.2);
+        border-radius: 50%;
+      }
+    }
+  }
 }
