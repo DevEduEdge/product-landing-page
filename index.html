@@ -23,10 +23,10 @@
       </span>
       <div>
         <ul class="navigation-bar">
-          <li id="home" class="nav-links"><a href="#">Home</a></li>
-          <li id="project" class="nav-links"><a href="#">Project</a></li>
-          <li id="blog" class="nav-links"><a href="#">Blog </a></li>
-          <li id="contact-us" class="nav-links"><a href="#">Contact Us</a></li>
+          <li class="nav-links home"><a href="#">Home</a></li>
+          <li class="nav-links project"><a href="#">Project</a></li>
+          <li class="nav-links blog"><a href="#">Blog </a></li>
+          <button class="nav-links contact-us">Contact Us</button>
         </ul>
       </div>
     </nav>
@@ -46,99 +46,63 @@
       <div class="information">
         <h1>This is information Header about The company.</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae
-          fuga mollitia veritatis facilis? Illo repellat cupiditate harum sed,
-          porro tenetur dignissimos, perspiciatis reiciendis aspernatur id
-          asperiores repudiandae natus magnam! Esse voluptatem iste, alias nobis
-          doloribus repellendus quia ab suscipit possimus quae, ratione sed
-          veritatis aspernatur rerum odio odit asperiores et aliquam excepturi
-          enim ullam ducimus corrupti. Numquam, ipsa dolore.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae fuga mollitia veritatis facilis? Illo repellat cupiditate harum sed,
+          porro tenetur dignissimos, perspiciatis reiciendis aspernatur id asperiores repudiandae natus magnam! Esse voluptatem iste, alias nobis
+          doloribus repellendus quia ab suscipit possimus quae, ratione sed veritatis aspernatur rerum odio odit asperiores et aliquam excepturi enim
+          ullam ducimus corrupti. Numquam, ipsa dolore.
         </p>
       </div>
       <!-- Product information -->
       <div class="product">
-        <div class="product-item">
-          <img src="dummy-product_2-768x512.png" alt="" />
-          <h1>Item 1</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
-        </div>
-        <div class="product-item">
-          <img src="dummy-product_2-768x512.png" alt="" />
-          <h1>Item 1</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
-        </div>
-        <div class="product-item">
-          <img src="dummy-product_2-768x512.png" alt="" />
-          <h1>Item 1</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
-        </div>
-        <div class="product-item">
-          <img src="dummy-product_2-768x512.png" alt="" />
-          <h1>Item 1</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
-        </div>
-        <div class="product-item">
-          <img src="dummy-product_2-768x512.png" alt="" />
-          <h1>Item 1</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
+        <h1>Products</h1>
+        <div class="product-container">
+          <div class="product-item">
+            <img src="dummy-product_2-768x512.png" alt="" />
+            <h1>Item 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+          </div>
+          <div class="product-item">
+            <img src="dummy-product_2-768x512.png" alt="" />
+            <h1>Item 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+          </div>
         </div>
       </div>
 
       <!-- Client Testimonies -->
       <div class="testimonies">
-        <div class="testimony-client">
-          <img src="dummy-product_2-768x512.png" height="150px" alt="" />
-          <h3>John Doe</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
-        </div>
-        <div class="testimony-client">
-          <img src="dummy-product_2-768x512.png" height="150px" alt="" />
-          <h3>Jack Smith</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
-        </div>
-        <div class="testimony-client">
-          <img src="dummy-product_2-768x512.png" height="150px" alt="" />
-          <h3>Laura White</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          </p>
+        <h1>Client Testimonies</h1>
+        <div class="client-container">
+          <div class="testimony-client">
+            <img src="dummy-product_2-768x512.png" height="150px" alt="" />
+            <h3>John Doe</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+          </div>
+          <div class="testimony-client">
+            <img src="dummy-product_2-768x512.png" height="150px" alt="" />
+            <h3>Jack Smith</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+          </div>
+          <div class="testimony-client">
+            <img src="dummy-product_2-768x512.png" height="150px" alt="" />
+            <h3>Laura White</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+          </div>
         </div>
       </div>
     </main>
 
     <!-- Footer Section  -->
     <footer>
-      <!-- contact us from -->
+      <!-- Contact us from -->
       <div>
         <form class="contact-form" action="">
           <label for="">Name</label>
-          <input
-            type="text"
-            name="user-name"
-            id="user-name"
-            placeholder="Enter your name"
-          />
+          <input type="text" name="user-name" id="user-name" placeholder="Enter your name" />
+
           <label for="">E-mail</label>
-          <input
-            type="email"
-            name="user-email"
-            id="user-email"
-            placeholder="Enter your email"
-          />
+          <input type="email" name="user-email" id="user-email" placeholder="Enter your email" />
+
           <label for="">Your Query</label>
           <textarea
             name="text-area"
@@ -149,7 +113,7 @@
           ></textarea>
         </form>
       </div>
-      <!-- navigation links section -->
+      <!-- Footer navigation links section -->
       <div class="footer-bottom">
         <div>
           <ul class="footer-nav-links">
@@ -158,13 +122,11 @@
             <li>Contact Us</li>
           </ul>
         </div>
-        <!-- about Me section -->
+        <!-- about us section -->
         <div class="author-info">
           <h1>Hi! I am Dummy, a Web Developer</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            cupiditate quo ipsa culpa id illum dolorum temporibus sint tempora
-            modi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate quo ipsa culpa id illum dolorum temporibus sint tempora modi?
           </p>
         </div>
         <!-- Social Media Section -->
@@ -178,5 +140,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- scripts -->
+    <script src="app.js"></script>
   </body>
 </html>

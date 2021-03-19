@@ -11,7 +11,7 @@ font-family: 'Yellowtail', cursive; */
 }
 
 nav {
-  background-color: #1757b8;
+  background-color: white;
   color: black;
   height: 50px;
   display: -webkit-box;
@@ -25,34 +25,55 @@ nav {
           justify-content: space-evenly;
 }
 
-.logo-img {
+nav .logo-img {
   padding-top: 15px;
   height: 100px;
   width: 100px;
   cursor: pointer;
 }
 
-.navigation-bar {
+nav .navigation-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.nav-links {
-  height: 30px;
-  width: 80px;
+nav .nav-links {
+  height: 20px;
+  width: 100px;
   padding: 10px;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
 }
 
-.nav-links :hover {
+nav .nav-links :hover {
   border: 2px red solid;
+}
+
+nav .home,
+nav .project,
+nav .blog,
+nav .contact-us {
+  background-color: #4284e7;
+  margin: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .hero-image {
@@ -63,9 +84,10 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
-.hero-info {
+.hero-image .hero-info {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,13 +106,13 @@ nav {
   left: 20%;
 }
 
-.hero-info .hero-heading {
+.hero-image .hero-info .hero-heading {
   color: #fff;
   font-size: 6rem;
   width: 100%;
 }
 
-.hero-info .hero-para {
+.hero-image .hero-info .hero-para {
   color: #fff;
   font-size: 2rem;
   position: absolute;
@@ -102,10 +124,40 @@ main {
   padding: 1rem;
   max-width: 80vw;
   margin: auto;
-  border: 1px solid red;
 }
 
-.product {
+main .product {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .product h1 {
+  margin: 0.5rem;
+  font-size: 3rem;
+}
+
+main .product .product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .product .product-container .product-item {
+  width: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,11 +167,22 @@ main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.product .product-item {
+main .product .product-container .product-item img {
+  height: 200px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+main .testimonies {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,18 +192,37 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
-  padding: 0.5rem;
+}
+
+main .testimonies h1 {
+  font-size: 3rem;
   margin: 0.5rem;
 }
 
-.product .product-item img {
-  height: 200px;
-  width: 300px;
+main .testimonies .client-container {
+  padding: 10px;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .testimonies .client-container .testimony-client {
+  height: 100%;
+  width: 20vw;
+  padding: 10px;
+  margin: 0.5rem;
+  word-wrap: break-word;
+}
+
+main .testimonies .client-container .testimony-client img {
+  height: 100px;
+  border-radius: 30px;
 }
 
 footer {
@@ -148,20 +230,22 @@ footer {
 }
 
 .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid red;
+  padding: 0.5rem;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  max-width: 60vw;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .footer-bottom {
