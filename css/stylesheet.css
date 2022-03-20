@@ -10,6 +10,10 @@ font-family: 'Yellowtail', cursive; */
   padding: 0;
 }
 
+body {
+  background-color: rgba(190, 190, 190, 0.308);
+}
+
 nav {
   background-color: white;
   color: black;
@@ -229,7 +233,7 @@ footer {
   margin-top: 2rem;
 }
 
-.contact-form {
+footer .contact-form {
   padding: 0.5rem;
   margin: auto;
   display: -ms-grid;
@@ -239,16 +243,16 @@ footer {
   max-width: 60vw;
 }
 
-.contact-form label,
-.contact-form input,
-.contact-form textarea {
+footer .contact-form label,
+footer .contact-form input,
+footer .contact-form textarea {
   font-weight: bold;
   font-size: 1.5rem;
   padding: 0.5rem;
   margin: 0.5rem;
 }
 
-.footer-bottom {
+footer .footer-bottom {
   background-color: #6868e6;
   width: 100%;
   display: -webkit-box;
@@ -262,12 +266,12 @@ footer {
           justify-content: space-evenly;
 }
 
-.footer-bottom .footer-nav-links {
+footer .footer-bottom .footer-nav-links {
   list-style: none;
   padding: 1rem;
 }
 
-.footer-bottom .footer-nav-links li {
+footer .footer-bottom .footer-nav-links li {
   font-size: 1.5rem;
   font-weight: bold;
   width: 100%;
@@ -281,7 +285,7 @@ footer {
   text-align: center;
 }
 
-.footer-bottom .footer-nav-links li:hover {
+footer .footer-bottom .footer-nav-links li:hover {
   background-color: black;
   color: white;
   -webkit-transform: scale(1.2);
@@ -290,7 +294,7 @@ footer {
           box-shadow: #8a8a8a 0px 5px 10px;
 }
 
-.footer-bottom .author-info {
+footer .footer-bottom .author-info {
   height: 100%;
   margin: 1rem;
   display: -webkit-box;
@@ -308,19 +312,19 @@ footer {
           justify-content: center;
 }
 
-.footer-bottom .author-info h1 {
+footer .footer-bottom .author-info h1 {
   font-size: 2.5rem;
   text-align: center;
 }
 
-.footer-bottom .author-info p {
+footer .footer-bottom .author-info p {
   font-size: 1.5rem;
   margin: 0.5rem;
   padding: 0.5rem;
   text-align: center;
 }
 
-.footer-bottom .social-media {
+footer .footer-bottom .social-media {
   list-style: none;
   height: 100%;
   font-size: 1.2rem;
@@ -329,18 +333,18 @@ footer {
   display: flex;
 }
 
-.footer-bottom .social-media .facebook,
-.footer-bottom .social-media .instagram,
-.footer-bottom .social-media .twitter,
-.footer-bottom .social-media .github {
+footer .footer-bottom .social-media .facebook,
+footer .footer-bottom .social-media .instagram,
+footer .footer-bottom .social-media .twitter,
+footer .footer-bottom .social-media .github {
   padding: 5px;
   margin: 5px;
 }
 
-.footer-bottom .social-media .facebook:hover,
-.footer-bottom .social-media .instagram:hover,
-.footer-bottom .social-media .twitter:hover,
-.footer-bottom .social-media .github:hover {
+footer .footer-bottom .social-media .facebook:hover,
+footer .footer-bottom .social-media .instagram:hover,
+footer .footer-bottom .social-media .twitter:hover,
+footer .footer-bottom .social-media .github:hover {
   background-color: black;
   color: white;
   -webkit-transform: scale(1.2);

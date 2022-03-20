@@ -1,147 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="stylesheet.css" />
-    <title>Welcome</title>
-  </head>
 
-  <body>
-    <!-- Navigation bar Section -->
-    <nav>
-      <span>
-        <a href="#">
-          <img class="logo-img" src="dummy-logo.png" alt="Logo" />
-        </a>
-      </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <title>Product Landing Page</title>
+</head>
+
+<body>
+  <!-- Navigation bar Section -->
+  <nav>
+    <span>
+      <a href="#">
+        <img class="logo-img" src="Images/dummy-logo.png" alt="Logo" />
+      </a>
+    </span>
+    <div>
+      <ul class="navigation-bar">
+        <li class="nav-links home"><a href="#">Home</a></li>
+        <li class="nav-links project"><a href="#">Project</a></li>
+        <li class="nav-links blog"><a href="#">Blog </a></li>
+        <li class="nav-links contact-us">Contact Us</li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-image">
+      <div class="hero-info">
+        <h1 class="hero-heading">This is Hero Header one</h1>
+        <p class="hero-para">This is Hero Para One</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body Section -->
+  <main>
+    <!-- Company Information -->
+    <div class="information">
+      <h1>This is information Header about The company.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae fuga mollitia veritatis facilis? Illo
+        repellat cupiditate harum sed,
+        porro tenetur dignissimos, perspiciatis reiciendis aspernatur id asperiores repudiandae natus magnam!
+      </p>
+    </div>
+    <!-- Product information -->
+    <div class="product">
+      <h1>Products</h1>
+      <div class="product-container">
+        <div class="product-item">
+          <img src="Images/dummy-product_2-768x512.png" alt="" />
+          <h1>Item 1</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+        </div>
+        <div class="product-item">
+          <img src="Images/dummy-product_2-768x512.png" alt="" />
+          <h1>Item 1</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client Testimonies -->
+    <div class="testimonies">
+      <h1>Client Testimonies</h1>
+      <div class="client-container">
+        <div class="testimony-client">
+          <img src="Images/dummy-product_2-768x512.png" height="150px" alt="" />
+          <h3>John Doe</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+        </div>
+        <div class="testimony-client">
+          <img src="Images/dummy-product_2-768x512.png" height="150px" alt="" />
+          <h3>Jack Smith</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+        </div>
+        <div class="testimony-client">
+          <img src="Images/dummy-product_2-768x512.png" height="150px" alt="" />
+          <h3>Laura White</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section  -->
+  <footer>
+    <!-- Contact us from -->
+    <div>
+      <form class="contact-form" action="">
+        <label for="">Name</label>
+        <input type="text" name="user-name" id="user-name" placeholder="Enter your name" />
+
+        <label for="">E-mail</label>
+        <input type="email" name="user-email" id="user-email" placeholder="Enter your email" />
+
+        <label for="">Your Query</label>
+        <textarea name="text-area" id="text-area" cols="30" rows="10"
+          placeholder="Your query for product information , service we provide, etc"></textarea>
+      </form>
+    </div>
+    <!-- Footer navigation links section -->
+    <div class="footer-bottom">
       <div>
-        <ul class="navigation-bar">
-          <li class="nav-links home"><a href="#">Home</a></li>
-          <li class="nav-links project"><a href="#">Project</a></li>
-          <li class="nav-links blog"><a href="#">Blog </a></li>
-          <button class="nav-links contact-us">Contact Us</button>
+        <ul class="footer-nav-links">
+          <li>Homepage</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
         </ul>
       </div>
-    </nav>
-    <!-- Hero Section -->
-    <header>
-      <div class="hero-image">
-        <div class="hero-info">
-          <h1 class="hero-heading">This is Hero Header one</h1>
-          <p class="hero-para">This is Hero Para One</p>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main Body Section -->
-    <main>
-      <!-- Company Information -->
-      <div class="information">
-        <h1>This is information Header about The company.</h1>
+      <!-- about us section -->
+      <div class="author-info">
+        <h1>Hi! I am Dummy, a Web Developer</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae fuga mollitia veritatis facilis? Illo repellat cupiditate harum sed,
-          porro tenetur dignissimos, perspiciatis reiciendis aspernatur id asperiores repudiandae natus magnam! Esse voluptatem iste, alias nobis
-          doloribus repellendus quia ab suscipit possimus quae, ratione sed veritatis aspernatur rerum odio odit asperiores et aliquam excepturi enim
-          ullam ducimus corrupti. Numquam, ipsa dolore.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate quo ipsa culpa id illum dolorum
+          temporibus sint tempora modi?
         </p>
       </div>
-      <!-- Product information -->
-      <div class="product">
-        <h1>Products</h1>
-        <div class="product-container">
-          <div class="product-item">
-            <img src="dummy-product_2-768x512.png" alt="" />
-            <h1>Item 1</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
-          </div>
-          <div class="product-item">
-            <img src="dummy-product_2-768x512.png" alt="" />
-            <h1>Item 1</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Client Testimonies -->
-      <div class="testimonies">
-        <h1>Client Testimonies</h1>
-        <div class="client-container">
-          <div class="testimony-client">
-            <img src="dummy-product_2-768x512.png" height="150px" alt="" />
-            <h3>John Doe</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
-          </div>
-          <div class="testimony-client">
-            <img src="dummy-product_2-768x512.png" height="150px" alt="" />
-            <h3>Jack Smith</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
-          </div>
-          <div class="testimony-client">
-            <img src="dummy-product_2-768x512.png" height="150px" alt="" />
-            <h3>Laura White</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit</p>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- Footer Section  -->
-    <footer>
-      <!-- Contact us from -->
+      <!-- Social Media Section -->
       <div>
-        <form class="contact-form" action="">
-          <label for="">Name</label>
-          <input type="text" name="user-name" id="user-name" placeholder="Enter your name" />
-
-          <label for="">E-mail</label>
-          <input type="email" name="user-email" id="user-email" placeholder="Enter your email" />
-
-          <label for="">Your Query</label>
-          <textarea
-            name="text-area"
-            id="text-area"
-            cols="30"
-            rows="10"
-            placeholder="Your query for product information , service we provide, etc"
-          ></textarea>
-        </form>
+        <ul class="social-media">
+          <li class="facebook"><i class="fab fa-facebook fa-2x"></i></li>
+          <li class="instagram"><i class="fab fa-instagram fa-2x"></i></li>
+          <li class="twitter"><i class="fab fa-twitter fa-2x"></i></li>
+          <li class="github"><i class="fab fa-github fa-2x"></i></li>
+        </ul>
       </div>
-      <!-- Footer navigation links section -->
-      <div class="footer-bottom">
-        <div>
-          <ul class="footer-nav-links">
-            <li>Homepage</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <!-- about us section -->
-        <div class="author-info">
-          <h1>Hi! I am Dummy, a Web Developer</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate quo ipsa culpa id illum dolorum temporibus sint tempora modi?
-          </p>
-        </div>
-        <!-- Social Media Section -->
-        <div>
-          <ul class="social-media">
-            <li class="facebook"><i class="fab fa-facebook fa-2x"></i></li>
-            <li class="instagram"><i class="fab fa-instagram fa-2x"></i></li>
-            <li class="twitter"><i class="fab fa-twitter fa-2x"></i></li>
-            <li class="github"><i class="fab fa-github fa-2x"></i></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- scripts -->
-    <script src="app.js"></script>
-  </body>
+  <!-- scripts -->
+  <script src="app.js"></script>
+</body>
+
 </html>
